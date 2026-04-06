@@ -57,6 +57,9 @@ app.use(errorHandler)
 const PORT = process.env.PORT
 connectDB().then(() => {
     app.listen(PORT, () => {
+        console.log("MONGO_URL:", process.env.MONGO_URL);
+console.log("PORT:", process.env.PORT);
+console.log("FE_URL:", process.env.FE_URL);
         console.log(`⚙️ Server is running at http://localhost:${PORT}/`);
     })
 })
