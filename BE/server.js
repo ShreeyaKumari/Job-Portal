@@ -28,21 +28,37 @@ app.use(cors({
 
 // need to change from here
 // CORS configuration
-const whitelist = [process.env.FE_URL, process.env.DEPLOY_FE_URL];
-const corsOptions = (req, callback) => {
-    const origin = req.header("Origin");
-    if (whitelist.includes(origin) || !origin) {
-        callback(null, {
-            origin: true,
-            credentials: true,
-            methods: "GET,HEAD,PATCH,POST,PUT,DELETE",
-            allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
-        });
+// const whitelist = [process.env.FE_URL, process.env.DEPLOY_FE_URL];
+// const corsOptions = (req, callback) => {
+//     const origin = req.header("Origin");
+//     if (whitelist.includes(origin) || !origin) {
+//         callback(null, {
+//             origin: true,
+//             credentials: true,
+//             methods: "GET,HEAD,PATCH,POST,PUT,DELETE",
+//             allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
+//         });
+//     } else {
+//         callback(null, { origin: false });
+//     }
+// };
+// app.use(cors(corsOptions));
+const allowedOrigins = [
+  process.env.FE_URL,
+  process.env.DEPLOY_FE_URL
+].filter(Boolean);
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
     } else {
-        callback(null, { origin: false });
+      console.error("❌ Blocked by CORS:", origin);
+      callback(new Error("CORS not allowed"));
     }
-};
-app.use(cors(corsOptions));
+  },
+  credentials: true
+}));
 
 
 
