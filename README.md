@@ -109,21 +109,4 @@ NODE_ENV=development
 npm start
 # Frontend
 npm run dev
-5. Access
-Frontend → http://localhost:5173
-Backend → http://localhost:3000
-
 ---
-
-### Why this is better
-- Labels like `# Backend` are inside code blocks → ✔ cleaner  
-- No broken formatting on GitHub → ✔  
-- Looks more like professional repos → ✔  
-
----
-
-If you want even cleaner (top-tier repos do this), I can combine backend+frontend into **one command flow** or add **Makefile / scripts**.
-
-
-```
-
