@@ -4,7 +4,7 @@ A comprehensive full-stack job portal application built with the MERN stack, con
 
 ## 🚀 Live Demo
 
-- **Frontend**: [https://hiredd-dun.vercel.app](https://hiredd-dun.vercel.app)
+- **Frontend**: [[https://hiredd-dun.vercel.app](https://jobprotalfirst-git-main-shreeyakumaris-projects.vercel.app/)](https://hiredd-dun.vercel.app)
 - **Backend API**: [https://hiredd-vwh1.onrender.com](https://hiredd-vwh1.onrender.com)
 
 ## 📋 Table of Contents
