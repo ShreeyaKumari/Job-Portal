@@ -9,6 +9,14 @@ This project demonstrates a scalable full-stack architecture using the MERN stac
 
 ---
 
+<img width="1849" height="878" alt="Screenshot 2026-04-30 020341" src="https://github.com/user-attachments/assets/be86e5db-6008-4d50-8500-9cff57d53485" />
+
+<img width="1869" height="891" alt="Screenshot 2026-04-30 020423" src="https://github.com/user-attachments/assets/43a12914-f1d9-4baa-b438-f714c662fbd6" />
+
+<img width="685" height="911" alt="Screenshot 2026-04-30 020432" src="https://github.com/user-attachments/assets/38de616d-eff5-4e44-8c46-7f3500a5fa5d" />
+
+
+
 ## 🚀 Live Demo
 
 - **Frontend**: https://jobprotalfirst-git-main-shreeyakumaris-projects.vercel.app/  
